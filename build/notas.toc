@@ -1,0 +1,18 @@
+\babel@toc {spanish}{}
+\contentsline {chapter}{\numberline {1} Introducción a la Blockchain }{5}%
+\contentsline {section}{\numberline {1.1}Que es la Blockchain?}{5}%
+\contentsline {chapter}{\numberline {2} Introducción a los cripto valores }{7}%
+\contentsline {chapter}{\numberline {3} Bitcoin, Altercoins y Stablecoins }{9}%
+\contentsline {chapter}{\numberline {4} Distintos tipos de Blockchain }{11}%
+\contentsline {chapter}{\numberline {5} Protocolos de consenso }{13}%
+\contentsline {chapter}{\numberline {6} Billeters Digitales }{15}%
+\contentsline {chapter}{\numberline {7} Plataforma de desarrollo basada en Ethereum }{17}%
+\contentsline {chapter}{\numberline {8} Programación en Solidity }{19}%
+\contentsline {chapter}{\numberline {9} Seguridad en aplicaciones basadas en Blockchain }{21}%
+\contentsline {chapter}{\numberline {10} Aplicaciones Financieras en Blockchain }{23}%
+\contentsline {chapter}{\numberline {11} Gestión de proyectos en la Blockchain }{25}%
+\contentsline {chapter}{\numberline {12} Introducción a los medios de pago basados en Ripple }{27}%
+\contentsline {chapter}{\numberline {13} Computación Cuántica y Blockchain }{29}%
+\contentsline {chapter}{\numberline {14} Integración entre Blockchain e Inteligencia Artificial }{31}%
+\contentsline {chapter}{\numberline {15} Integración entre Blockchain e Internet of Things }{33}%
+\contentsline {chapter}{\numberline {16} Integración de todos los aspectos analizados }{35}%
