@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1601899694 "e:/User/Documents/cursos/blockchain-cacic-2020/notas.tex" "e:/User/Documents/cursos/blockchain-cacic-2020/build/notas.pdf" "notas" 1601899695
+["pdflatex"] 1601910599 "e:/User/Documents/cursos/blockchain-cacic-2020/notas.tex" "e:/User/Documents/cursos/blockchain-cacic-2020/build/notas.pdf" "notas" 1601917674
   "C:/Users/EteriumD/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1598464251 10021531 42f2f010b7528d6fe6aa11b2d0f35088 ""
   "C:/Users/EteriumD/AppData/Local/MiKTeX/pdftex/config/pdftex.map" 1598464353 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/EteriumD/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233955448 1004 54797486969f23fa377b128694d548df ""
@@ -56,15 +56,15 @@
   "C:/Users/EteriumD/AppData/Local/Programs/MiKTeX/tex/latex/graphics/keyval.sty" 1580750142 2677 e3b24ff953e5b58d924f163d25380312 ""
   "C:/Users/EteriumD/AppData/Local/Programs/MiKTeX/tex/latex/graphics/trig.sty" 1580750142 4093 d7fa7d81d2870d509d25b17d0245e735 ""
   "C:/Users/EteriumD/AppData/Local/Programs/MiKTeX/tex/latex/l3backend/l3backend-pdfmode.def" 1593424850 24606 ecae4e851ce9ce4554d156050e5057f9 ""
-  "build/notas.aux" 1601899695 3517 4e3d9b207166c655ff0497bebfa29725 "pdflatex"
-  "build/notas.toc" 1601899695 1457 55bc4325fd013dbc0d9921cd994e2b22 "pdflatex"
-  "e:/User/Documents/cursos/blockchain-cacic-2020/build/notas.aux" 1601899695 3517 4e3d9b207166c655ff0497bebfa29725 ""
-  "e:/User/Documents/cursos/blockchain-cacic-2020/notas.tex" 1601899694 1955 707842fea5e1598e2da45e37bd3a4200 ""
-  "notas.tex" 1601899694 1955 707842fea5e1598e2da45e37bd3a4200 ""
+  "build/notas.aux" 1601910600 4053 b8cf3f2ea74d8a1b23af242edf1b8773 "pdflatex"
+  "build/notas.toc" 1601910600 1788 195baab21a719c0b12ecf172a0f98469 "pdflatex"
+  "e:/User/Documents/cursos/blockchain-cacic-2020/build/notas.aux" 1601910600 4053 b8cf3f2ea74d8a1b23af242edf1b8773 ""
+  "e:/User/Documents/cursos/blockchain-cacic-2020/notas.tex" 1601910598 3854 3e8f4dc19107ffebaa3be6f0481f19ee ""
+  "notas.tex" 1601910598 3854 3e8f4dc19107ffebaa3be6f0481f19ee ""
   (generated)
-  "e:/User/Documents/cursos/blockchain-cacic-2020/build/notas.pdf"
   "build/notas.pdf"
-  "e:/User/Documents/cursos/blockchain-cacic-2020/build/notas.log"
-  "build/notas.toc"
-  "build/notas.aux"
   "build/notas.log"
+  "build/notas.aux"
+  "e:/User/Documents/cursos/blockchain-cacic-2020/build/notas.pdf"
+  "build/notas.toc"
+  "e:/User/Documents/cursos/blockchain-cacic-2020/build/notas.log"

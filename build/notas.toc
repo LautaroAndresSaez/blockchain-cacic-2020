@@ -1,6 +1,11 @@
 \babel@toc {spanish}{}
 \contentsline {chapter}{\numberline {1} Introducción a la Blockchain }{5}%
 \contentsline {section}{\numberline {1.1}Que es la Blockchain?}{5}%
+\contentsline {section}{\numberline {1.2}Por que es importante?}{5}%
+\contentsline {section}{\numberline {1.3}Aspectos de la Blockchain}{5}%
+\contentsline {section}{\numberline {1.4}Como funciona el Blockchain?}{6}%
+\contentsline {section}{\numberline {1.5}Mineria}{6}%
+\contentsline {section}{\numberline {1.6}Smart Contract}{6}%
 \contentsline {chapter}{\numberline {2} Introducción a los cripto valores }{7}%
 \contentsline {chapter}{\numberline {3} Bitcoin, Altercoins y Stablecoins }{9}%
 \contentsline {chapter}{\numberline {4} Distintos tipos de Blockchain }{11}%

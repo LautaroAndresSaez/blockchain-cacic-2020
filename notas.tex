@@ -6,6 +6,8 @@
 \usepackage{amssymb}
 \usepackage{graphicx}
 
+
+
 \title{Desarrollo de aplicaciones en la Blockchain \\ CACIC 2020}
 \author{Saez, Lautaro Andres}
 \date{}
@@ -33,6 +35,47 @@
 
     Si sucede un error este no puede ser modificado, si no que debo generar una nueva entrada 
     que corrija dicho problema.
+
+    \section{Por que es importante?}
+
+    La Blockchain es importante ya que elimina cualquier intermediario.
+    Es la unica base de datos distribuida que no pudo ser hackeada desde 2009.
+
+    Permite complementar o sustituir los sistemas clasicos de compra/venta.
+
+    \section{Aspectos de la Blockchain}
+
+    Es una red distribuida. La conexion se estable por P2P como por ejemplo torrent. 
+    Es importante saber que la informacion esta encriptada, tenemos la seguridad que la informacion 
+    que esta en la Blockchain (si la podemos verificar) entonces esa informacion es la que guardo el usuario.
+
+    A la informacion que viaja se la denomina \textbf{tokens}, esto es muy importante para cuando 
+    trabajemos los criptoactivos, como el bitcoin.
+
+    \section{Como funciona el Blockchain?}
+
+    Si existen 2 usuarios llamemos A y B. Si A quiere realizar una transaccion a B
+    entonces A debe generar un bloque (lo que representa una transaccion), luego el 
+    bloque se trasmite el bloque a toda la red y se busca un HASH a fuerza bruta 
+    (mineria). Una vez que alguna de las maquinas encuentra el HASH 
+    el resto de los nodos valida dicho valor para verificar que el bloque es valido.
+    A los bloques se les agrega el HASH de la caja anterior, armando una cadena. Finalmente 
+    B ve reflajada la transaccion en su billetera.
+
+    \section{Mineria}
+
+    Es una sucesion de calculos complejos. El primer minero que selle el bloque 
+    recive una paga en dicha criptomoneda, para este caso tomaremos el bitcoin.
+    El bloque queda registrado de forma permanente en la cadena de bloques.
+    
+    Añadir un bloque nuevo se vuelve cada vez mas complejo.
+
+    \section{Smart Contract}
+
+    Es un programa que facilita, asegura, hace cumplir y ejecuta acuerdos entre 2 partes, como 
+    lo hacen los bancos, los estudios, etc.
+
+    
 
     \chapter{ Introducción a los cripto valores }
     \chapter{ Bitcoin, Altercoins y Stablecoins }

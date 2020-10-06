@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.8.26)  5 OCT 2020 05:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.8.26)  5 OCT 2020 08:10
 entering extended mode
 **e:/User/Documents/cursos/blockchain-cacic-2020/notas.tex
 (e:/User/Documents/cursos/blockchain-cacic-2020/notas.tex
@@ -140,22 +140,22 @@ LaTeX Info: Redefining \% on input line 8.
 )
 \openout1 = `notas.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Info: Redefining \. on input line 13.
-LaTeX Info: Redefining \% on input line 13.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Info: Redefining \. on input line 15.
+LaTeX Info: Redefining \% on input line 15.
  (C:\Users\EteriumD\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count192
@@ -173,11 +173,11 @@ LaTeX Info: Redefining \% on input line 13.
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 14.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 16.
  (C:\Users\EteriumD\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 14.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 16.
  (C:\Users\EteriumD\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
@@ -188,62 +188,61 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ] (e:/User\Documents\cursos\blockchain-cacic-2020\build\notas.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
-)
+ [3])
 \tf@toc=\write3
 \openout3 = `notas.toc'.
 
- [3]
-LaTeX Info: Redefining \. on input line 16.
-LaTeX Info: Redefining \% on input line 16.
- [4
-
-]
+LaTeX Info: Redefining \. on input line 18.
+LaTeX Info: Redefining \% on input line 18.
+ [4]
 Cap\'{\i }tulo 1.
-[5]
-LaTeX Info: Redefining \. on input line 37.
-LaTeX Info: Redefining \% on input line 37.
- [6
+[5
 
 ]
+LaTeX Info: Redefining \. on input line 80.
+LaTeX Info: Redefining \% on input line 80.
+ [6]
 Cap\'{\i }tulo 2.
-[7]
-LaTeX Info: Redefining \. on input line 38.
-LaTeX Info: Redefining \% on input line 38.
+[7
+
+]
+LaTeX Info: Redefining \. on input line 81.
+LaTeX Info: Redefining \% on input line 81.
  [8
 
 ]
 Cap\'{\i }tulo 3.
 [9]
-LaTeX Info: Redefining \. on input line 39.
-LaTeX Info: Redefining \% on input line 39.
+LaTeX Info: Redefining \. on input line 82.
+LaTeX Info: Redefining \% on input line 82.
  [10
 
 ]
 Cap\'{\i }tulo 4.
 [11]
-LaTeX Info: Redefining \. on input line 40.
-LaTeX Info: Redefining \% on input line 40.
+LaTeX Info: Redefining \. on input line 83.
+LaTeX Info: Redefining \% on input line 83.
  [12
 
 ]
 Cap\'{\i }tulo 5.
 [13]
-LaTeX Info: Redefining \. on input line 41.
-LaTeX Info: Redefining \% on input line 41.
+LaTeX Info: Redefining \. on input line 84.
+LaTeX Info: Redefining \% on input line 84.
  [14
 
 ]
 Cap\'{\i }tulo 6.
 [15]
-LaTeX Info: Redefining \. on input line 42.
-LaTeX Info: Redefining \% on input line 42.
+LaTeX Info: Redefining \. on input line 85.
+LaTeX Info: Redefining \% on input line 85.
  [16
 
 ]
 Cap\'{\i }tulo 7.
 [17]
-LaTeX Info: Redefining \. on input line 43.
-LaTeX Info: Redefining \% on input line 43.
+LaTeX Info: Redefining \. on input line 86.
+LaTeX Info: Redefining \% on input line 86.
 
 Overfull \hbox (20.9795pt too wide) has occurred while \output is active
 \OT1/cmr/m/n/10 18 \OT1/cmr/m/sl/10 CAP[]ITULO 7.   PLATAFORMA DE DESARROLLO BASADA EN ETHEREUM 
@@ -254,15 +253,15 @@ Overfull \hbox (20.9795pt too wide) has occurred while \output is active
 ]
 Cap\'{\i }tulo 8.
 [19]
-LaTeX Info: Redefining \. on input line 44.
-LaTeX Info: Redefining \% on input line 44.
+LaTeX Info: Redefining \. on input line 87.
+LaTeX Info: Redefining \% on input line 87.
  [20
 
 ]
 Cap\'{\i }tulo 9.
 [21]
-LaTeX Info: Redefining \. on input line 45.
-LaTeX Info: Redefining \% on input line 45.
+LaTeX Info: Redefining \. on input line 88.
+LaTeX Info: Redefining \% on input line 88.
 
 Overfull \hbox (32.99342pt too wide) has occurred while \output is active
 \OT1/cmr/m/n/10 22 \OT1/cmr/m/sl/10 CAP[]ITULO 9.   SEGURIDAD EN APLICACIONES BASADAS EN BLOCKCHAIN 
@@ -273,22 +272,22 @@ Overfull \hbox (32.99342pt too wide) has occurred while \output is active
 ]
 Cap\'{\i }tulo 10.
 [23]
-LaTeX Info: Redefining \. on input line 46.
-LaTeX Info: Redefining \% on input line 46.
+LaTeX Info: Redefining \. on input line 89.
+LaTeX Info: Redefining \% on input line 89.
  [24
 
 ]
 Cap\'{\i }tulo 11.
 [25]
-LaTeX Info: Redefining \. on input line 47.
-LaTeX Info: Redefining \% on input line 47.
+LaTeX Info: Redefining \. on input line 90.
+LaTeX Info: Redefining \% on input line 90.
  [26
 
 ]
 Cap\'{\i }tulo 12.
 [27]
-LaTeX Info: Redefining \. on input line 48.
-LaTeX Info: Redefining \% on input line 48.
+LaTeX Info: Redefining \. on input line 91.
+LaTeX Info: Redefining \% on input line 91.
 
 Overfull \hbox (53.6846pt too wide) has occurred while \output is active
 \OT1/cmr/m/n/10 28 \OT1/cmr/m/sl/10 CAP[]ITULO 12.   INTRODUCCI[]ON A LOS MEDIOS DE PAGO BASADOS EN RIPPLE 
@@ -299,15 +298,15 @@ Overfull \hbox (53.6846pt too wide) has occurred while \output is active
 ]
 Cap\'{\i }tulo 13.
 [29]
-LaTeX Info: Redefining \. on input line 49.
-LaTeX Info: Redefining \% on input line 49.
+LaTeX Info: Redefining \. on input line 92.
+LaTeX Info: Redefining \% on input line 92.
  [30
 
 ]
 Cap\'{\i }tulo 14.
 [31]
-LaTeX Info: Redefining \. on input line 50.
-LaTeX Info: Redefining \% on input line 50.
+LaTeX Info: Redefining \. on input line 93.
+LaTeX Info: Redefining \% on input line 93.
 
 Overfull \hbox (74.31287pt too wide) has occurred while \output is active
 \OT1/cmr/m/n/10 32 \OT1/cmr/m/sl/10 CAP[]ITULO 14.   INTEGRACI[]ON ENTRE BLOCKCHAIN E INTELIGENCIA ARTIFICIAL 
@@ -318,8 +317,8 @@ Overfull \hbox (74.31287pt too wide) has occurred while \output is active
 ]
 Cap\'{\i }tulo 15.
 [33]
-LaTeX Info: Redefining \. on input line 51.
-LaTeX Info: Redefining \% on input line 51.
+LaTeX Info: Redefining \. on input line 94.
+LaTeX Info: Redefining \% on input line 94.
 
 Overfull \hbox (49.03397pt too wide) has occurred while \output is active
 \OT1/cmr/m/n/10 34 \OT1/cmr/m/sl/10 CAP[]ITULO 15.   INTEGRACI[]ON ENTRE BLOCKCHAIN E INTERNET OF THINGS 
@@ -334,15 +333,15 @@ LaTeX Info: Redefining \. on input line 8.
 LaTeX Info: Redefining \% on input line 8.
 ) ) 
 Here is how much of TeX's memory you used:
- 3455 strings out of 480790
- 46985 string characters out of 2895894
- 297284 words of memory out of 3000000
- 19443 multiletter control sequences out of 15000+200000
+ 3456 strings out of 480790
+ 46993 string characters out of 2895894
+ 298284 words of memory out of 3000000
+ 19444 multiletter control sequences out of 15000+200000
  541459 words of font info for 59 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 30i,6n,35p,269b,361s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 30i,6n,35p,269b,432s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/EteriumD/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/EteriumD/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/EteriumD/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/EteriumD/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/EteriumD/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/EteriumD/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl10.pfb>
-Output written on e:/User\Documents\cursos\blockchain-cacic-2020\build\notas.pdf (35 pages, 110921 bytes).
+Output written on e:/User\Documents\cursos\blockchain-cacic-2020\build\notas.pdf (35 pages, 115738 bytes).
 PDF statistics:
  138 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

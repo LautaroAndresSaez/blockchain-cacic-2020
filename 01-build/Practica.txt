@@ -1,0 +1,411 @@
+Primer contacto con la libreria Truffle
+
+Fuente: https://www.trufflesuite.com/docs/truffle/quickstart
+Este ejemplo ha sido tomado de la URL antes mencioanda, con ciertas adpataciones
+para su mejor compresion.
+
+Convensiones:
+> este simbolo indica que se debe ejecutar este comando en prompt del sistema operativo
+* este simbolo indica que deberia mostrar la pantalla ante un comando ejecutado
+! este simbolo indica informacion que se desea transmitir
+
+Todo este ejemplo ha sido ejecutado desde el command prompt del sistema operativo.
+
+0. Pre requisitos
+    Node.js instalado (https://nodejs.org/es/download/)
+    npm     instalado (npm install -g mpn)
+    truffle instalado (npm install -g truffle)
+
+1. Crear el directorio para el proyecto y acceder a el
+    > mkdir MetaCoin
+    > cd MetaCoin
+
+2. Bajar el codigo y estructura del proyecto llamado "MetaCoin"
+    > truffle unbox metacoin
+
+    *   Starting unbox...
+        =================
+
+        Preparing to download box
+        Downloading
+        Cleaning up temporary files
+        Setting up box
+
+        Unbox successful, sweet!
+
+        Commands:
+
+        Compile contracts : truffle compile
+        Migrate contracts : truffle migrate
+        Test contracts    : truffle test
+
+    ! La estructura que se ha creado dentro del directorio donde estamso parados es:
+        /contracts        : Direcotrio para los contratos
+        /migrations       : Direcotrio para la administracion de los contratos
+        /test             : Directorio para pruebas de unidad de los contratos
+        truffle-config.js : Archivo de configuracion de Truffle
+
+3. Testear el contrato
+    Opcion 1: directamente ejecutar el test del contrato (prueba de unidad de codigo):
+    > truffle test ./test/TestMetaCoin.sol
+
+    * Compiling your contracts...
+      ===========================
+      Compiling .\contracts\ConvertLib.sol
+      Compiling .\contracts\MetaCoin.sol
+      Compiling .\contracts\Migrations.sol
+      Compiling .\contracts\ConvertLib.sol
+      Compiling .\contracts\MetaCoin.sol
+      Compiling .\test\TestMetaCoin.sol
+      Artifacts written to C:\Users\Admin\AppData\Local\Temp\test--13432-HGzxHR2uW8vD
+      Compiled successfully using:
+         - solc: 0.5.16+commit.9c3226ce.Emscripten.clang
+
+      TestMetaCoin
+         testInitialBalanceUsingDeployedContract (208ms)
+         testInitialBalanceWithNewMetaCoin (141ms)
+
+      2 passing (8s)
+
+    ! Los contratos que se han generado en forma automatica
+         1. Se compilan (solc: 0.5.16+commit.9c3226ce.Emscripten.clang)
+         2. Se ejecuta la prueba directamente invocando al contrato inteligente
+    ! Si se ha obtenido un retorno de pantalla similar al anterior,
+      se ha podido generar correctamente la estructura del proyecto.
+
+    Opcion 2: Invocando al contrato a traves de un file de javascript (similar a produccion):
+      > truffle test ./test/metacoin.js
+
+      * Compiling your contracts...
+      ===========================
+      Compiling .\contracts\ConvertLib.sol
+      Compiling .\contracts\MetaCoin.sol
+      Compiling .\contracts\Migrations.sol
+      Compiling .\contracts\ConvertLib.sol
+      Artifacts written to C:\Users\Admin\AppData\Local\Temp\test--21380-pl4iZgIbuFmF
+      Compiled successfully using:
+          - solc: 0.5.16+commit.9c3226ce.Emscripten.clang
+
+      Contract: MetaCoin
+         should put 10000 MetaCoin in the first account (48ms)
+         should call a function that depends on a linked library (86ms)
+         should send coin correctly (393ms)
+
+      3 passing (583ms)
+
+    ! Los contratos que se han generado en forma automatica
+         1. Se compilan (solc: 0.5.16+commit.9c3226ce.Emscripten.clang)
+         2. Se ejecuta la prueba invocando al javascript que a su vez invoca al contrato inteligente
+    ! Si se ha obtenido un retorno de pantalla similar al anterior,
+      se ha podido generar correctamente la estructura del proyecto.
+
+4. Compilar un ocntrato inteligente en Truffle
+    > truffle compile
+
+    * Compiling your contracts...
+      ===========================
+      Compiling .\contracts\ConvertLib.sol
+      Compiling .\contracts\MetaCoin.sol
+      Compiling .\contracts\Migrations.sol
+      Compiling .\contracts\ConvertLib.sol
+      Artifacts written to C:\BCSC\01_Build\MetaCoin\build\contracts
+      Compiled successfully using:
+          - solc: 0.5.16+commit.9c3226ce.Emscripten.clang
+
+    ! Los contratos que se han generado en forma automatica
+         1. Se compilan (solc: 0.5.16+commit.9c3226ce.Emscripten.clang)
+         2. Se almacenan en el directorio ./build/contracts
+         3. Se e accede a ellos se los puede ediar para ver la forma particular que tienen.
+
+5. Migrar
+    ! El concepto de migrar en Truffle es la accion de poner en una blockchain un contrato intelignete.
+    ! En este primer ejemplo se pondra en un nodo local que permite generar Truffle (sin ocnexion exterior)
+
+    Opcion 1: por linea de comandos en el prompt del sistema operativo
+        !En primer lugar se debe cargar el nodo local de Blockchain que provee Truffle
+
+        >truffle develop
+
+        * Truffle Develop started at http://127.0.0.1:9545/
+
+          Accounts:
+         (0) 0x3b5475eeb9ed4b1bce059e960b95c19cd5d1b92c
+         (1) 0xa0816835b6b8e988f1be0ab3a5b554a6eba6b6b4
+         (2) 0x89168e44a79b55633e9813afdcd7998e96ee3394
+         ........
+
+         Private Keys:
+         (0) 2de3b4339f77212067a23221c3e31805a8523f78851e7b4ab40ef942f0a7c8bc
+         (1) 85d33c66631eb7dee7cb47c155a302dfde8b6232e2c1836d3e8675d7450a7033
+         (2) 7be51c90637d9399ca24c0cbd1c4f5dd6eaf78e55e43247c93eabb5ec62c83d9
+         ........
+
+         Mnemonic: cute knee scare demise web caught update addict stereo ginger right pitch
+
+         Important: This mnemonic was created for you by Truffle. It is not secure.
+         Ensure you do not use it on production blockchains, or else you risk losing funds.
+
+         truffle(develop)>
+
+       ! La informacion de salida de pantalla corresponde a:
+          1. Conjunto de billeteras con las cuales se puede interactuar (son 10).
+          2. Sus correspondientes claves privadas (son 10).
+          3. El memotecnico que hace que esta combinacion sea unica.
+          4. Por ulitmo queda el nodo ejecutandose, con un nuevo prompt
+                 truffle(develop)>
+             Aqui es donde se podran ejecutar un conjunto de ocmandos relacionados con el nodo local.
+
+       ! Una vez cargado el nodo se procede a migrar (deploy) del contrato inteligente
+         En el nuevo prompt que genero el nodo de Truffle (truffle(develop)>)
+
+             > migrate   (aclaracion: el comando se deberia ver truffle(develop)>migrate)
+
+             * Compiling your contracts...
+               ===========================
+               Compiling .\contracts\ConvertLib.sol
+               Artifacts written to C:\BCSC\01_Build\MetaCoin\build\contracts
+               Compiled successfully using:
+                   - solc: 0.5.16+commit.9c3226ce.Emscripten.clang
+
+               Starting migrations...
+               ======================
+               Network name:    'develop'
+               Network id:      5777
+               Block gas limit: 6721975 (0x6691b7)
+
+              1_initial_migration.js
+              ======================
+
+              Deploying 'Migrations'
+              ----------------------
+              transaction hash:    0x3d411f34b0deba1317c5c66f5b060e2a22d3a759fab1af0a3a99899b2c7759db
+              Blocks: 0            Seconds: 0
+              contract address:    0xEF31783270785C7D5Fbb26de6cf03A8EFb82728A
+              block number:        1
+              block timestamp:     1601815941
+              account:             0x3b5475eEb9ED4b1bcE059e960B95C19CD5d1B92C
+              balance:             99.9967165
+              gas used:            164175 (0x2814f)
+              gas price:           20 gwei
+              value sent:          0 ETH
+              total cost:          0.0032835 ETH
+
+              Saving migration to chain.
+              Saving artifacts
+              -------------------------------------
+              Total cost:           0.0032835 ETH
+
+
+              2_deploy_contracts.js
+              =====================
+
+              Deploying 'ConvertLib'
+              ----------------------
+              transaction hash:    0x0a1c1c1b71b8433a983e5493ad6936c9531d00a6d1e5d45b8c2b474410f21768
+              Blocks: 0            Seconds: 0
+              contract address:    0x0af598786Ad6151046db2e4487acf17E9e4d12cc
+              block number:        3
+              block timestamp:     1601815941
+              account:             0x3b5475eEb9ED4b1bcE059e960B95C19CD5d1B92C
+              balance:             99.99396028
+              gas used:            95470 (0x174ee)
+              gas price:           20 gwei
+              value sent:          0 ETH
+              total cost:          0.0019094 ETH
+
+               Linking
+               -------
+               * Contract: MetaCoin <--> Library: ConvertLib (at address: 0x0af598786Ad6151046db2e4487acf17E9e4d12cc)
+
+               Deploying 'MetaCoin'
+               --------------------
+               transaction hash:    0xeedb3817f88464be6651a5509aca564ec335a67ad75feebb114c01b903bbe052
+               Blocks: 0            Seconds: 0
+               contract address:    0x3ed45F53a2b3101AeadA00b079d907581a48372F
+               block number:        4
+               block timestamp:     1601815941
+               account:             0x3b5475eEb9ED4b1bcE059e960B95C19CD5d1B92C
+               balance:             99.98822898
+               gas used:            286565 (0x45f65)
+               gas price:           20 gwei
+               value sent:          0 ETH
+               total cost:          0.0057313 ETH
+
+               Saving migration to chain.
+               Saving artifacts
+               -----------------------------------
+               Total cost:           0.0076407 ETH
+
+               Summary
+               =======
+               Total deployments:   3
+               Final cost:          0.0109242 ETH
+
+       ! El resultado de ejecutar migrates es la salida antes obtenida.
+       ! En esta se puede apreciar el proceos en detalle y el costo asociado a la migracion.
+
+    Opcion 2: Utilizar Ganache que es otro componente de la Suite de Truffle
+       ! En terminos generales presta las mismas funcionalidades que la linea de comandos pero posee una interfaz grafica.
+
+       1. Primero se debe bajar e instalar Ganache (https://www.trufflesuite.com/ganache)
+       2. Si todavia se encuentra ejecutandose el nodo de consola bajarlo (hacer dos veces ctrl-C.)
+       3. Levantar Gananche (si no hay workspace crear uno haciendo click en la opcion New Workspace Ethereum
+       4. Si la aplicacion Ganache se cargo apropiadamente:
+           4.1 Deberia ver un conjunto de direcciones en una pantalla principalmente blanca.
+           4.2 Una primer linea con opciones de menu
+           4.3 Una segunda linea  con informacion del nodo
+           4.4 Ina ternece liena con el nemonico
+       5. En la segunda liena aproximadamente en la mitad de la ventana deberia ver:
+            RPC Server
+            HTTP://0.0.0.0:8545
+            Aclaracion: Si no es esta IP a la derecha vera un boton de ocnfiguracion y dentre seleccionar server
+                        En ese lugar podra coambiar al opcion de IP y el puerto.
+       6. Editar el truffle-config.js que se encuentra en el dir MetaCoin
+           6.1 Descomentar desde "networks" hasta el final.
+           6.2 Cambiar la  host: y port: segun lo que tengan en su configuracion, para ambos servidores (development y test)
+       7. Salvar el archivo truffle-config.js
+       8. El la linea de comandos del sistema operativo ejecutar lo sigueinte:
+           > truffle migrate
+
+           * Compiling your contracts...
+             ===========================
+             Compiling .\contracts\ConvertLib.sol
+             Artifacts written to C:\BCSC\01_Build\MetaCoin\build\contracts
+             Compiled successfully using:
+                  - solc: 0.5.16+commit.9c3226ce.Emscripten.clang
+
+             Starting migrations...
+             ======================
+             Network name:    'development'
+             Network id:      2222
+             Block gas limit: 6721975 (0x6691b7)
+
+             1_initial_migration.js
+             ======================
+
+             Deploying 'Migrations'
+             ----------------------
+             transaction hash:    0x9d8d3c84e2d68d8ac43fc5b6251530a7077ffbfca64ab56b1cd55fede26a855e
+             Blocks: 0            Seconds: 0
+             contract address:    0x47a06bF95A1680769F98Ea9bCFC4C996aC9CF911
+             block number:        9
+             block timestamp:     1601818441
+             account:             0x3Bb1434A66CA96021B1a2A84f41714Ab2473a3cC
+             balance:             99.95679648
+             gas used:            188483 (0x2e043)
+             gas price:           20 gwei
+             value sent:          0 ETH
+             total cost:          0.00376966 ETH
+
+             Saving migration to chain.
+             Saving artifacts
+             -------------------------------------
+             Total cost:          0.00376966 ETH
+
+             2_deploy_contracts.js
+             =====================
+
+             Deploying 'ConvertLib'
+             ----------------------
+             transaction hash:    0x1971152e1516f958570567a3893f4b416d638d17a2193a18b8c714f94dfe0fea
+             Blocks: 0            Seconds: 0
+             contract address:    0xc2BFC11524D1c406B7Bd2FaD819Dff1b401461D9
+             block number:        11
+             block timestamp:     1601818442
+             account:             0x3Bb1434A66CA96021B1a2A84f41714Ab2473a3cC
+             balance:             99.95383698
+             gas used:            105974 (0x19df6)
+             gas price:           20 gwei
+             value sent:          0 ETH
+             total cost:          0.00211948 ETH
+
+             Linking
+             -------
+             * Contract: MetaCoin <--> Library: ConvertLib (at address: 0xc2BFC11524D1c406B7Bd2FaD819Dff1b401461D9)
+
+             Deploying 'MetaCoin'
+             --------------------
+             transaction hash:    0xe8b7602370c1a4780e2dd7ba7a0b5a5911fc154a8a55183f9666b0361cc2d80b
+             Blocks: 0            Seconds: 0
+             contract address:    0xCb8e28343D4Dd2D67eb16ABA4B68284b4Bd993d6
+             block number:        12
+             block timestamp:     1601818442
+             account:             0x3Bb1434A66CA96021B1a2A84f41714Ab2473a3cC
+             balance:             99.94702304
+             gas used:            340697 (0x532d9)
+             gas price:           20 gwei
+             value sent:          0 ETH
+             total cost:          0.00681394 ETH
+
+             Saving migration to chain.
+             Saving artifacts
+             -------------------------------------
+             Total cost:          0.00893342 ETH
+
+             Summary
+             =======
+             Total deployments:   3
+             Final cost:          0.01270308 ETH
+
+             ! Se deberia obtener un retorno de pantalla similar al presentado.
+             ! Una forma rapida de validar si se interacuo ocn el nodo de Ganache:
+                 1. Buscar en la salida de pantalla anterior la linea account:
+                    Para este ejemplo (atencion: la direccion sera seguramente distinta):
+                       account:             0x3Bb1434A66CA96021B1a2A84f41714Ab2473a3cC
+                 2. Ir a la interfaz de Ganache y encontrar la misma direccion
+                    si se la ha encontrado es que se inteactuo con la interfaz, ademas
+                    deberia ver que no tiene  mas 100 ETH y deberia tener ahora 99.XX ETH
+
+                3. Una validacion mas certera puede ser ir a la opcion de menu de Ganache>Transactions
+                   Se podra observar el historial de las interacciones realizadas.
+
+6. Interactuar con la consola de Truffle
+   6.1. Cargar el nodo de Truffle (Aclaracion: Se puede hacer con Ganache)
+       > truffle develop
+
+   6.2. En la primera linea de la consola de deploy se vera la IP y puerto donde escucha el nodo.
+       * Truffle Develop started at http://127.0.0.1:9545/
+
+   6.3. Ya dentro del ambiente del nodo hacer la migracion (detalle se puede encontrar mas arriba)
+      > migrate
+
+   6.4. Abrir una nueba consola del sistema operativo
+       4.1 Navegar hasta el directorio MetaCoin
+       4.2 Editar el file truffle-config.js
+            Descomentar el archivo y cambiar la ip y puerto de ambos servidores a la direccion
+            que aparece cuando se ejecuto el comando truffle develop, en este caso http://127.0.0.1:9545/
+       4.3 Ejecutar el comando:
+           > truffle console
+   6.5 Interaccion
+         6.5.1 Obtener todas las address
+              > let accounts = await web3.eth.getAccounts()
+         6.5.2 Ver las address
+              > accounts
+              *[
+               '0x3b5475eEb9ED4b1bcE059e960B95C19CD5d1B92C',
+               '0xa0816835B6b8E988f1BE0AB3a5b554a6eBa6B6B4',
+               '0x89168E44A79B55633e9813Afdcd7998e96eE3394',
+               '0xDB560b3320342944c023eadFbCFc8BAF08a8f6F2',
+               '0xeBDEf85989e2090E72eb3b93CA9F69f4Fa13Bd5B',
+               '0xE5a153C8A4d289290fD00142890dc30948248517',
+               '0xb98165ea69c6FD4D2D1Ca25cC0003826cB538e73',
+               '0x61681A50D49013222441A77cF25762DE270aD693',
+               '0x938E3a6E766085716e47162d506E8560D3aFeDd7',
+               '0xF3DDE449E8587788090e9c6B4E2ca6A633eecc16'
+               ]
+         6.5.3 Obtener la instancia del contrato inteligente MetaCoin
+             > let instance = await MetaCoin.deployed()
+         6.5.4 Obtener su Balance en Ether
+             > let ether = await instance.getBalanceInEth(accounts[0])
+         6.5.5 Ver el resultado obtenido
+             > ether.toNumber()
+             * 1000
+         6.5.6 Hacer una tranasaccion
+             > instance.sendCoin(accounts[1], 500)
+             > let balance_View1 = await instance.getBalance(accounts[1])
+             > balance_View1.toNumber()
+             * 1000
+             > instance.sendCoin(accounts[1], 500)
+             > let balance_View2 = await instance.getBalance(accounts[1])
+             > balance_View2.toNumber()
+             * 1500
